@@ -24,12 +24,12 @@
 }
 
 *::-webkit-scrollbar-thumb {
-  background: #7840eb;
+  background: #F2BC1C;
   border: none;
 }
 
 *::-webkit-scrollbar-thumb:active {
-  background: #161616;
+  background: #CFA320;
 }
 
 *::-webkit-scrollbar-track {
@@ -104,12 +104,23 @@ h3 {
 }
 .logo img {
   width: 20%;
+  margin-right: 10px;
+}
+.logo span {
+  font-family: bold;
+  transition: color 0.3s ease-in-out;
+}
+.logo span:hover {
+  color: #F2BC1C;
 }
 
 .menu-items li {
   list-style: none;
   margin-left: 1.5rem;
   font-size: 1.3rem;
+}
+.menu-items li a:hover {
+  color: #F2BC1C;
 }
 
 .navbar a {
@@ -216,30 +227,8 @@ h3 {
     display: none;
   }
 }
-.transition {
-  position: absolute;
-  width: 90%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border-radius: 5px;
-  border: 2px solid #fff;
-}
-
-.parallax-effect-image {
-  position: relative;
-  height: 100vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-}
-.parallax-effect-image h1 {
-  position: absolute;
-  top: 50%;
-  left: 24.5%;
-  transform: translate(-50%, -50%);
-  color: #000;
-  text-shadow: 2px 4px 3px rgba(168, 168, 168, 0.3);
+.bg12 img {
+  width: 100%;
 }
 
 .section-one {
@@ -303,7 +292,7 @@ h3 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: #ccc;
+  background: #fff;
   padding-top: 100px;
   height: 100vh;
 }
@@ -327,6 +316,9 @@ h3 {
   align-content: center;
   margin-top: 50px;
 }
+.section-six .icons a {
+  transition: 0.3s ease-in-out;
+}
 .section-six .icons a img {
   background: #fff;
   padding: 10px;
@@ -335,11 +327,19 @@ h3 {
   border-radius: 10px;
   margin: 0 30px;
 }
+.section-six .icons a:hover {
+  transform: scale(1.1);
+}
 
 .section-seven {
-  padding: 230px 0;
+  padding-bottom: 230px;
+  margin-top: 230px;
   background: #fff;
   text-align: center;
+  background-image: url("/public/img/wave.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .section-seven h1 {
   margin: 0 auto;
@@ -353,10 +353,6 @@ h3 {
 .section-seven h3 {
   margin: 100px auto 0;
   width: 60%;
-}
-
-.section-eight {
-  padding: 80px 0;
 }
 
 .slider {
@@ -390,8 +386,8 @@ h3 {
   margin: 0px 5px;
   width: 10px;
   height: 10px;
-  background-color: #FFFFFF;
-  border: 1px solid #FFFFFF;
+  background-color: #F2BC1C;
+  border: 1px solid #F2BC1C;
   border-radius: 4px;
   opacity: 0.6;
   cursor: pointer;
@@ -738,4 +734,134 @@ footer .footer-three {
 }
 footer .footer-three p {
   color: #000;
+}
+
+.section-testmonials {
+  background: #ccc;
+  font-family: medium;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  height: 100vh;
+}
+
+.column-testmonials {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 20%;
+}
+
+.section-details {
+  padding-left: 20px;
+}
+
+.name-section {
+  font-weight: 800;
+  font-size: 14px;
+  color: #000 !important;
+  margin: 0;
+}
+
+.title-section b {
+  color: #000;
+}
+
+.title-section {
+  color: #000;
+  font-size: 30px;
+  margin: 0;
+}
+
+.navigation-testmonials {
+  display: flex;
+  gap: 10px;
+  margin-left: 20px;
+}
+
+.swiper-testmonials {
+  width: 80%;
+  overflow: hidden;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .section-testmonials {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .swiper-testmonials {
+    width: 100%;
+  }
+}
+.swiper-testmonials .swiper-slide {
+  border-radius: 10px;
+  background: #525252;
+  display: flex;
+  padding: 30px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  transform: scale(0.9) !important;
+  filter: blur(0.5px) grayscale(0.5);
+  transition: 0.2s;
+}
+
+.swiper-testmonials .swiper-slide * {
+  margin: 0;
+}
+
+.swiper-testmonials .swiper-slide-active {
+  filter: blur(0px) !important;
+  transform: scale(1) !important;
+}
+
+.card-slide {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.head-slide {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-slide {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.title-slide h4 {
+  color: #FFF;
+  font-size: 20px;
+}
+
+.title-slide h6 {
+  color: #fff;
+  font-size: 14px;
+}
+
+.text-slide {
+  color: #fff;
+  font-size: 14px;
+}
+
+.swiper-button-testmonials-next,
+.swiper-button-testmonials-prev {
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .header-slide svg {
+    width: 50px;
+  }
+  .title-slide h4 {
+    font-size: 14px;
+  }
+  .swiper-testmonials .swiper-slide {
+    padding: 20px;
+  }
 }/*# sourceMappingURL=style.css.map */
