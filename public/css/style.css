@@ -228,12 +228,32 @@ h3 {
   }
 }
 .bg12 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
   width: 100%;
-  height: 80vh;
-  background-image: url("/public/img/banner1.jpg");
-  background-position: start;
-  background-repeat: no-repeat;
-  background-size: cover;
+}
+.bg12 .text-box {
+  width: 40%;
+  margin-left: 60px;
+}
+.bg12 .text-box h1 {
+  text-transform: uppercase;
+  font-weight: 800;
+}
+.bg12 .text-box h1 span {
+  color: #F2BC1C;
+  font-weight: 800;
+}
+.bg12 img {
+  width: 70%;
+}
+.bg12 hr {
+  width: 20%;
+  height: 5px;
+  background: #F2BC1C;
+  border: none;
+  margin: 20px 0;
 }
 
 .section-six {
@@ -284,6 +304,7 @@ h3 {
   padding-top: 230px;
   background: #fff;
   text-align: center;
+  height: 100vh;
   background-image: url("/public/img/wave.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -307,6 +328,10 @@ h3 {
   width: 100%;
   height: 10vh;
   background: #F2BC1C;
+}
+
+.section-eight {
+  height: 100vh;
 }
 
 .slider {
