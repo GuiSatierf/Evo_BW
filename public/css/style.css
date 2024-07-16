@@ -713,4 +713,50 @@ footer .footer-three {
 }
 footer .footer-three p {
   color: #000;
+}
+
+.section-nine {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 80vh;
+}
+.section-nine .img-box {
+  flex: 2;
+}
+.section-nine .img-box img {
+  width: 40%;
+}
+.section-nine .text-box {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.section-nine .text-box h3 {
+  margin: 30px 0;
+  padding: 0;
+  width: 55%;
+}
+.section-nine .text-box .kb-btn {
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  width: 200px;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  cursor: pointer;
+  display: block;
+}
+.section-nine .text-box .kb-btn-1 {
+  background-image: linear-gradient(to right, #4753C1 0%, #8094F7 51%, #4753C1 100%);
+}
+.section-nine .text-box .kb-btn-1:hover {
+  background-position: right center;
 }/*# sourceMappingURL=style.css.map */
