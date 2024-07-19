@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EvoCode</title>
+    <link rel="icon" type="image/x-icon" href="/public/img/logo4.png">
+
+    <script src="https://kit.fontawesome.com/ef31ccd9e2.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="/public/css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+    <style>
+        body {
+            animation-play-state: paused;
+        }
+    </style>
+
+<body>
+    <nav id="nav">
+        <a href="/home.html"><img src="/public/img/logo4.png" alt=""></a>
+
+        <button id="btn-menu">
+            <div id="nav-icon3">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </button>
+        <div id="menu">
+            <ul class="menu-items">
+                <li><a href="/home.html">Início</a></li>
+                <li><a href="/about.html" id="active">Sobre</a></li>
+                <li><a href="#">Portifólio</a></li>
+                <li><a href="/contact.html">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="main-content-contact">
+        
+        <h1>Sobre</h1>
+
+    </div>
+
+    <!-- Scroll reveal -->
+
+    <script src="public/js/Scripts.js"></script>
+    <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+    <script>
+        $(document).ready(function () {
+            $('#nav-icon3').click(function () {
+                $(this).toggleClass('open');
+            });
+        });
+    </script>
+</body>
+
+</html>
