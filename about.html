@@ -13,7 +13,16 @@
 
     <style>
         body {
-            animation-play-state: paused;
+            background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABnSURBVHja7M5RDYAwDEXRDgmvEocnlrQS2SwUFST9uEfBGWs9c97nbGtDcquqiKhOImLs/UpuzVzWEi1atGjRokWLFi1atGjRokWLFi1atGjRokWLFi1af7Ukz8xWp8z8AAAA//8DAJ4LoEAAlL1nAAAAAElFTkSuQmCC") repeat 0 0;
+            -webkit-animation: bg-scrolling-reverse 0.92s infinite;
+            -moz-animation: bg-scrolling-reverse 0.92s infinite;
+            -o-animation: bg-scrolling-reverse 0.92s infinite;
+            animation: bg-scrolling-reverse 0.92s infinite;
+            -webkit-animation-timing-function: linear;
+            -moz-animation-timing-function: linear;
+            -o-animation-timing-function: linear;
+            animation-timing-function: linear;
+            animation-play-state: paused !important;
         }
     </style>
 
@@ -32,11 +41,32 @@
         </ul>
     </header>
 
-    <div class="main-content-contact">
-        
+    <div class="main-content-about">
+
         <h1>Sobre</h1>
 
-        <div class="contact">
+        <div class="section-about">
+
+            <div class="text-box">
+                <h4>Na Evocode, nossa equipe é composta por dois desenvolvedores.</h4>
+                <p>
+                    Olá Meu nome é Guilherme Freitas <br>
+                    Desenvolvedor Web Front-end <br>
+                    Tenho 20 anos e estou no segundo ano da faculdade de Engenharia de Software na Unicesumar.
+                    Me dedico constantemente ao estudo de tecnologias de desenvolvimento para aplicações web,
+                    atualmente tenho 2 anos de experiência com front-end.
+                </p>
+                <p>
+                    Olá O meu nome é Haniel Fialho <br>
+                    Desenvolvedor de Software Full Stack <br>
+                    Sou um desenvolvedor de 23 anos e hacker desde os 14 anos. Adoro programar e descobrir como resolver
+                    problemas profundos usando tecnologia de ponta. O meu foco principal é o desenvolvimento front e
+                    back-end, criando aplicações que têm impacto na vida de milhares de utilizadores.
+
+                    Sou também estudante na Doctum | JM. Advogado </p>
+            </div>
+
+            <div class="contact">
                 <div class="card">
                     <img src="public/img/b1.jpg" alt="Imagem 1" class="card-image">
                     <div class="social-icons">
@@ -53,6 +83,12 @@
                         <a href="https://instagram.com" target="_blank" class="social-icon">I</a>
                     </div>
                 </div>
+            </div>
+        </div>
+
+        <div class="social">
+            <a href=""><i class="fa-brands fa-github"></i></a>
+            <a href=""><i class="fa-brands fa-discord"></i></a>
         </div>
     </div>
 

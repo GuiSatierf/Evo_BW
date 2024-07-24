@@ -13,7 +13,16 @@
 
     <style>
         body {
-            animation-play-state: paused;
+            background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABnSURBVHja7M5RDYAwDEXRDgmvEocnlrQS2SwUFST9uEfBGWs9c97nbGtDcquqiKhOImLs/UpuzVzWEi1atGjRokWLFi1atGjRokWLFi1atGjRokWLFi1af7Ukz8xWp8z8AAAA//8DAJ4LoEAAlL1nAAAAAElFTkSuQmCC") repeat 0 0;
+            -webkit-animation: bg-scrolling-reverse 0.92s infinite;
+            -moz-animation: bg-scrolling-reverse 0.92s infinite;
+            -o-animation: bg-scrolling-reverse 0.92s infinite;
+            animation: bg-scrolling-reverse 0.92s infinite;
+            -webkit-animation-timing-function: linear;
+            -moz-animation-timing-function: linear;
+            -o-animation-timing-function: linear;
+            animation-timing-function: linear;
+            animation-play-state: paused !important;
         }
     </style>
 
@@ -33,33 +42,20 @@
     </header>
 
     <div class="main-content-contact">
-        
-        <h1>Sobre</h1>
 
-        <div class="contact">
-                <div class="card">
-                    <img src="public/img/b1.jpg" alt="Imagem 1" class="card-image">
-                    <div class="social-icons">
-                        <a href="https://facebook.com" target="_blank" class="social-icon">F</a>
-                        <a href="https://twitter.com" target="_blank" class="social-icon">T</a>
-                        <a href="https://instagram.com" target="_blank" class="social-icon">I</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="/public/img/a1.jpg" alt="Imagem 2" class="card-image">
-                    <div class="social-icons">
-                        <a href="https://facebook.com" target="_blank" class="social-icon">F</a>
-                        <a href="https://twitter.com" target="_blank" class="social-icon">T</a>
-                        <a href="https://instagram.com" target="_blank" class="social-icon">I</a>
-                    </div>
-                </div>
+        <h1>Contato</h1>
+
+        
+        <div class="social">
+            <a href=""><i class="fa-brands fa-github"></i></a>
+            <a href=""><i class="fa-brands fa-discord"></i></a>
         </div>
     </div>
 
     <!-- Scroll reveal -->
 
     <script src="public/js/Scripts.js"></script>
-    
+
 </body>
 
 </html>

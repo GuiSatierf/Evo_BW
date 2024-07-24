@@ -13,7 +13,16 @@
 
     <style>
         body {
-            animation-play-state: paused;
+            background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABnSURBVHja7M5RDYAwDEXRDgmvEocnlrQS2SwUFST9uEfBGWs9c97nbGtDcquqiKhOImLs/UpuzVzWEi1atGjRokWLFi1atGjRokWLFi1atGjRokWLFi1af7Ukz8xWp8z8AAAA//8DAJ4LoEAAlL1nAAAAAElFTkSuQmCC") repeat 0 0;
+            -webkit-animation: bg-scrolling-reverse 0.92s infinite;
+            -moz-animation: bg-scrolling-reverse 0.92s infinite;
+            -o-animation: bg-scrolling-reverse 0.92s infinite;
+            animation: bg-scrolling-reverse 0.92s infinite;
+            -webkit-animation-timing-function: linear;
+            -moz-animation-timing-function: linear;
+            -o-animation-timing-function: linear;
+            animation-timing-function: linear;
+            animation-play-state: paused !important;
         }
     </style>
 
@@ -32,10 +41,190 @@
         </ul>
     </header>
 
-    <div class="main-content-contact">
-        
-        <h1>Sobre</h1>
+    <div class="main-content-port">
 
+        <h1>Alguns Projetos</h1>
+
+        <!-- Modal Buttons -->
+        <div class="icons">
+            <a href="#openModal-one"><img src="/public/img/a1.jpg" alt=""></a>
+            <a href="#openModal-two"><img src="/public/img/b1.jpg" alt=""></a>
+            <a href="#openModal-three"><img src="/public/img/c1.jpg" alt=""></a>
+        </div>
+
+        <!-- Modal content -->
+        <div id="openModal-one" class="modalDialog">
+            <div>
+                <a href="#close" title="Close" class="close">X</a>
+                <div class="container">
+                    <div class="carousel">
+                        <input type="radio" name="slides" checked="checked" id="slide-a1">
+                        <input type="radio" name="slides" id="slide-a2">
+                        <input type="radio" name="slides" id="slide-a3">
+                        <ul class="carousel__slides">
+                            <li class="carousel__slide">
+                                <figure>
+                                    <div>
+                                        <img src="/public/img/a1.jpg" alt="">
+                                    </div>
+                                    <figcaption>
+                                        Kazuha vulgo kazuza
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li class="carousel__slide">
+                                <figure>
+                                    <div>
+                                        <img src="/public/img/a2.jpg" alt="">
+                                    </div>
+                                    <figcaption>
+                                        Haniel me da uma skin no lol
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li class="carousel__slide">
+                                <figure>
+                                    <div>
+                                        <img src="/public/img/a3.jpg" alt="">
+                                    </div>
+                                    <figcaption>
+                                        Nunca pedi nada
+                                    </figcaption>
+                                </figure>
+                            </li>
+                        </ul>
+                        <ul class="carousel__thumbnails">
+                            <li>
+                                <label for="slide-a1"><img src="/public/img/a1.jpg" alt=""></label>
+                            </li>
+                            <li>
+                                <label for="slide-a2"><img src="/public/img/a2.jpg" alt=""></label>
+                            </li>
+                            <li>
+                                <label for="slide-a3"><img src="/public/img/a3.jpg" alt=""></label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="openModal-two" class="modalDialog">
+            <div>
+                <a href="#close" title="Close" class="close">X</a>
+                <div class="container">
+                    <div class="carousel">
+                        <input type="radio" name="slides" checked="checked" id="slide-b1">
+                        <input type="radio" name="slides" id="slide-b2">
+                        <input type="radio" name="slides" id="slide-b3">
+                        <ul class="carousel__slides">
+                            <li class="carousel__slide">
+                                <figure>
+                                    <div>
+                                        <img src="/public/img/b1.jpg" alt="">
+                                    </div>
+                                    <figcaption>
+                                        Ayakinha UwU
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li class="carousel__slide">
+                                <figure>
+                                    <div>
+                                        <img src="/public/img/b2.jpg" alt="">
+                                    </div>
+                                    <figcaption>
+                                        Lorem ipsum
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li class="carousel__slide">
+                                <figure>
+                                    <div>
+                                        <img src="/public/img/b3.jpg" alt="">
+                                    </div>
+                                    <figcaption>
+                                        Lorem ipsum
+                                    </figcaption>
+                                </figure>
+                            </li>
+                        </ul>
+                        <ul class="carousel__thumbnails">
+                            <li>
+                                <label for="slide-b1"><img src="/public/img/b1.jpg" alt=""></label>
+                            </li>
+                            <li>
+                                <label for="slide-b2"><img src="/public/img/b2.jpg" alt=""></label>
+                            </li>
+                            <li>
+                                <label for="slide-b3"><img src="/public/img/b3.jpg" alt=""></label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="openModal-three" class="modalDialog">
+            <div>
+                <a href="#close" title="Close" class="close">X</a>
+                <div class="container">
+                    <div class="carousel">
+                        <input type="radio" name="slides" checked="checked" id="slide-c1">
+                        <input type="radio" name="slides" id="slide-c2">
+                        <input type="radio" name="slides" id="slide-c3">
+                        <ul class="carousel__slides">
+                            <li class="carousel__slide">
+                                <figure>
+                                    <div>
+                                        <img src="/public/img/c1.jpg" alt="">
+                                    </div>
+                                    <figcaption>
+                                        Imagem 1
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li class="carousel__slide">
+                                <figure>
+                                    <div>
+                                        <img src="/public/img/c2.jpg" alt="">
+                                    </div>
+                                    <figcaption>
+                                        Imagem 2
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li class="carousel__slide">
+                                <figure>
+                                    <div>
+                                        <img src="/public/img/c3.jpg" alt="">
+                                    </div>
+                                    <figcaption>
+                                        Imagem 3
+                                    </figcaption>
+                                </figure>
+                            </li>
+                        </ul>
+                        <ul class="carousel__thumbnails">
+                            <li>
+                                <label for="slide-c1"><img src="/public/img/c1.jpg" alt=""></label>
+                            </li>
+                            <li>
+                                <label for="slide-c2"><img src="/public/img/c2.jpg" alt=""></label>
+                            </li>
+                            <li>
+                                <label for="slide-c3"><img src="/public/img/c3.jpg" alt=""></label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="social">
+            <a href=""><i class="fa-brands fa-github"></i></a>
+            <a href=""><i class="fa-brands fa-discord"></i></a>
+        </div>
     </div>
 
     <!-- Scroll reveal -->
